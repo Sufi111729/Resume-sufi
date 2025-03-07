@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <style>
+        .form-container{
+            padding: auto;
+            margin: 20px;
+        }
+    </style>
+    <p>red hart &#x1F600;</p>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form action="submit_form.php" method="post" enctype="multipart/form-data" autocomplete="on">
+            
+            <label for="firstname">First Name</label><br>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter first name" required><br><br>
+
+            <label for="lastname">Last Name</label><br>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter last name" required><br><br>
+
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" name="dob" id="dob" required><br><br>
+
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" rows="3" placeholder="Enter your address" required></textarea><br><br>
+            <p>label for="address" Address /label   textarea name="address" id="address" rows="3" placeholder="Enter your address" required /textarea</p>
+
+            <label for="mobile">Mobile Number</label><br>
+            <input type="tel" name="mobile" id="mobile" placeholder="Enter mobile number" pattern="[0-9]{10}" required><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter email" required><br><br>
+
+            <label for="resume">Upload Resume</label><br>
+            <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx" required><br><br>
+
+            <label for="password">Set Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter password" required><br><br>
+
+            <label>Gender</label><br>
+            <div class="radio-group">
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </div><br><br>
+
+            <label>Are You Interested?</label><br>
+            <div class="checkbox-group">
+                <input type="checkbox" name="interested" id="interested">
+                <label for="interested">Yes</label>
+            </div><br><br>
+
+            <label for="forgive">Write about forgiveness</label><br>
+            <textarea id="forgive" name="forgive" rows="4" placeholder="Write your thoughts on forgiveness..."></textarea><br><br>
+
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </form>
+    </div>
+
+</body>
+</html>
